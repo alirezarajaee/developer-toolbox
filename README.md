@@ -33,15 +33,11 @@ Plus:
 - Fully responsive layout with a mobile drawer navigation
 - Accessible: semantic HTML, keyboard navigation, visible focus states, ARIA labels
 
-## Screenshots
+## Preview
 
-> 📸 **TODO:** Add screenshots here after deploying.
-> Suggested shots: the dashboard in dark mode, a tool page (e.g. JSON Formatter), and the mobile layout.
-
-```markdown
-![<img width="1852" height="1791" alt="image" src="https://github.com/user-attachments/assets/00c6a685-1c8b-4442-aa30-ea7998a28d47" />
-)
-```
+<p align="center">
+  <img src="./screenshots/dashboard.png" alt="Developer Toolbox Dashboard" width="100%">
+</p>
 
 ## Tech Stack
 
