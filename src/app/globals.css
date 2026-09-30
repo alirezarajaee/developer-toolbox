@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
+    Consolas, "DejaVu Sans Mono", monospace;
+}
+
+/*
+ * Dark is the default theme. The inline script in the root layout adds
+ * either `dark` or `light` to <html> before hydration; `light` overrides
+ * the tokens below.
+ */
+:root {
+  color-scheme: dark;
+
+  --background: #0b0e14;
+  --foreground: #e6eaf2;
+  --card: #10141c;
+  --card-foreground: #e6eaf2;
+  --muted: #161b26;
+  --muted-foreground: #97a1b5;
+  --border: #232b3a;
+  --input: #151a25;
+  --accent: #6366f1;
+  --accent-foreground: #ffffff;
+  --ring: #6366f1;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #f87171;
+}
+
+html.light {
+  color-scheme: light;
+
+  --background: #f7f8fa;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --muted: #eef1f6;
+  --muted-foreground: #5b6472;
+  --border: #e2e6ee;
+  --input: #ffffff;
+  --accent: #4f46e5;
+  --accent-foreground: #ffffff;
+  --ring: #4f46e5;
+  --success: #059669;
+  --warning: #b45309;
+  --danger: #dc2626;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 8px;
+    border: 2px solid var(--background);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--muted-foreground);
+  }
+
+  textarea,
+  input,
+  pre,
+  code {
+    font-family: var(--font-mono);
+  }
+
+  mark {
+    background-color: color-mix(in srgb, var(--accent) 30%, transparent);
+    color: inherit;
+    border-radius: 2px;
+    padding: 0 1px;
+  }
+}

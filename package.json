@@ -1,0 +1,30 @@
+{
+  "name": "developer-toolbox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A fast, privacy-friendly collection of essential tools for developers. Runs entirely in the browser.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "node serve-out.mjs",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "lucide-react": "^0.545.0",
+    "next": "^15.5.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4",
+    "tailwindcss": "^4",
+    "typescript": "^5.9.3"
+  }
+}
