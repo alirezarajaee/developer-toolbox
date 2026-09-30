@@ -7,12 +7,8 @@ Essential tools for developers, all in one place. A fast, privacy-friendly colle
 Once deployed, the site is available at:
 
 ```text
-https://USERNAME.github.io/developer-toolbox/
+https://alirezarajaee.github.io/developer-toolbox/
 ```
-
-> **Replace `USERNAME`** with your actual GitHub username after you push this repository.
-> The URL follows GitHub Pages' standard `https://<owner>.github.io/<repository>/` pattern for a project site named `developer-toolbox`.
-> If you rename the repository, set `NEXT_PUBLIC_BASE_PATH` in `next.config.ts` (or as a repository variable) to the new name so assets keep working under the new subpath.
 
 ## Features
 
