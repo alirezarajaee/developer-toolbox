@@ -2,13 +2,9 @@
 
 Essential tools for developers, all in one place. A fast, privacy-friendly collection of essential developer utilities that runs **entirely in your browser** — no backend, no accounts, no tracking.
 
-## Live Demo
+## 🌐 Live Demo
 
-Once deployed, the site is available at:
-
-```text
-https://alirezarajaee.github.io/developer-toolbox/
-```
+[🚀 Open Developer Toolbox](https://alirezarajaee.github.io/developer-toolbox/)
 
 ## Features
 
@@ -43,7 +39,8 @@ Plus:
 > Suggested shots: the dashboard in dark mode, a tool page (e.g. JSON Formatter), and the mobile layout.
 
 ```markdown
-![Dashboard](docs/screenshots/dashboard.png)
+![<img width="1852" height="1791" alt="image" src="https://github.com/user-attachments/assets/00c6a685-1c8b-4442-aa30-ea7998a28d47" />
+)
 ```
 
 ## Tech Stack
